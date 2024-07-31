@@ -1,0 +1,17 @@
+mysql> use faculty;
+Database changed
+mysql> create table faculty(facno int(10), facname varchar(25), gender char(8), dob int(10), doj int(10), mobileno int(24));
+Query OK, 0 rows affected, 4 warnings (0.03 sec)
+
+mysql> desc faculty;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| facno    | int         | YES  |     | NULL    |       |
+| facname  | varchar(25) | YES  |     | NULL    |       |
+| gender   | char(8)     | YES  |     | NULL    |       |
+| dob      | int         | YES  |     | NULL    |       |
+| doj      | int         | YES  |     | NULL    |       |
+| mobileno | int         | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)

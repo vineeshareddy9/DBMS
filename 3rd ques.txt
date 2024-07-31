@@ -1,0 +1,18 @@
+mysql> create database departement;
+Query OK, 1 row affected (0.01 sec)
+
+
+mysql> use departement;
+Database changed
+mysql> create table departement(deptno varchar(4),deptname varchar(15),depthead varchar(4));
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> desc departement;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | varchar(4)  | YES  |     | NULL    |       |
+| deptname | varchar(15) | YES  |     | NULL    |       |
+| depthead | varchar(4)  | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)

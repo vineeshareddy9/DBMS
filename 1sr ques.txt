@@ -1,0 +1,23 @@
+create database student;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> create database student;
+ERROR 1007 (HY000): Can't create database 'student'; database exists
+mysql> create database student;
+mysql> use student;
+Database changed
+
+mysql>  create table student(regno int(10),name varchar(25),gender char(10),dob int(10),mobileno int(10),city int(25));
+Query OK, 0 rows affected, 4 warnings (0.05 se
+mysql> desc student;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| regno    | int         | YES  |     | NULL    |       |
+| name     | varchar(25) | YES  |     | NULL    |       |
+| gender   | char(10)    | YES  |     | NULL    |       |
+| dob      | int         | YES  |     | NULL    |       |
+| mobileno | int         | YES  |     | NULL    |       |
+| city     | int         | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
